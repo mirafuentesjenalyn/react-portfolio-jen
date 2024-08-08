@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom': '#408AFF',
+        'bgbg': '#20202F',
+      },
       backgroundImage: {
         'blue-yellow-gradient': 'linear-gradient(to right, #1E3A8A, #F59E0B)', // Example gradient
       }
