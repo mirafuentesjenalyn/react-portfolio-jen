@@ -24,7 +24,7 @@ const Navbar = () => {
         <a href='#home'>
           <div className="flex items-center">
             <img className='w-10' src={logo} alt='Logo' />
-            <h1 className='ml-2'>jen</h1>
+            <h1 className='ml-2 font-programming'>jen</h1>
           </div>
         </a>
       </div>
@@ -34,26 +34,26 @@ const Navbar = () => {
         <a href='#home'>
           <div className='flex items-center'>
             <img className='w-10' src={logo} alt='Logo' />
-            <h1 className='ml-2'>jen</h1>
+            <h1 className='ml-2 font-programming'>jen</h1>
           </div>
         </a>
 
         <div className='flex gap-10'>
           <h1 className='text-custom flex items-center'>
             <span className='mr-1'>#</span>
-            <a href="#home" className="text-neutral-300 hover:text-cyan-300">home</a>
+            <a href="#home" className="text-neutral-300 hover:text-cyan-300 font-programming">home</a>
           </h1>
           <h1 className='text-custom flex items-center'>
             <span className='mr-1'>#</span>
-            <a href="#about-me" className="text-neutral-300 hover:text-cyan-300">about-me</a>
+            <a href="#about-me" className="text-neutral-300 hover:text-cyan-300 font-programming">about-me</a>
           </h1>
           <h1 className='text-custom flex items-center'>
             <span className='mr-1'>#</span>
-            <a href="#projects" className="text-neutral-300 hover:text-cyan-300">projects</a>
+            <a href="#projects" className="text-neutral-300 hover:text-cyan-300 font-programming">projects</a>
           </h1>
           <h1 className='text-custom flex items-center'>
             <span className='mr-1'>#</span>
-            <a href="#contact" className="text-neutral-300 hover:text-cyan-300">contact</a>
+            <a href="#contact" className="text-neutral-300 hover:text-cyan-300 font-programming">contact</a>
           </h1>
         </div>
       </div>
@@ -69,22 +69,22 @@ const Navbar = () => {
             className="relative top-3 left-0 w-full flex flex-col items-start gap-4 p-4 md:hidden">
             <h1 className='text-custom flex items-center'>
                 <span className='mr-1'>#</span>
-                  <a href="#home" className="text-neutral-300 hover:text-cyan-300 mr-4">home</a>
+                  <a href="#home" className="text-neutral-300 hover:text-cyan-300 font-programming mr-4">home</a>
               </h1>
 
               <h1 className='text-custom flex items-center'>
                 <span className='mr-1'>#</span>
-                  <a href="#about-me" className="text-neutral-300 hover:text-cyan-300 mr-4">about-me</a>
+                  <a href="#about-me" className="text-neutral-300 hover:text-cyan-300 font-programming mr-4">about-me</a>
               </h1>
 
               <h1 className='text-custom flex items-center'>
                 <span className='mr-1'>#</span>
-                  <a href="#projects" className="text-neutral-300 hover:text-cyan-300 mr-4">projects</a>
+                  <a href="#projects" className="text-neutral-300 hover:text-cyan-300 font-programming mr-4">projects</a>
               </h1>
 
               <h1 className='text-custom flex items-center'>
                 <span className='mr-1'>#</span>
-                  <a href="#contact" className="text-neutral-300 hover:text-cyan-300 mr-4">contact</a>
+                  <a href="#contact" className="text-neutral-300 hover:text-cyan-300 font-programming mr-4">contact</a>
               </h1>
           </motion.div>
         )}

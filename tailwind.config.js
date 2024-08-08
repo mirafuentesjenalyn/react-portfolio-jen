@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        programming: ['Fira Code', 'monospace'],
+      },
       colors: {
         'custom': '#408AFF',
         'bgbg': '#20202F',
