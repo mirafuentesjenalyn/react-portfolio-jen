@@ -12,10 +12,10 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="relative mb-20 flex flex-col items-center justify-between py-6">
+    <nav className="relative mb-20 flex flex-col items-center justify-between">
 
       {/* mobile view */}
-      <div className='mt-8 md:hidden flex items-center justify-between w-full'>
+      <div className='mt-10 md:hidden flex items-center justify-between w-full'>
         <button 
           onClick={toggleMenu} 
           className='text-2xl text-neutral-300 hover:text-cyan-300'>
