@@ -56,7 +56,7 @@ const Home = () => {
                             variants={container(0.5)}
                             initial="hidden"
                             animate='visible'
-                            className="font-programming mt-5 text-xl sm:text-xl lg:text-4xl text-[#1BBBFF] mb-2 sm:mb-5 lg:mb-3 ml-20"
+                            className="font-programming mt-5 text-3xs sm:text-3xl lg:text-4xl text-[#1BBBFF] mb-2 sm:mb-5 lg:mb-3 ml-20"
                         >
                             {/* // className="font-programming bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"> */}
                             Jenalyn Mirafuentes
@@ -100,7 +100,7 @@ const Home = () => {
                             animate={{ x: 0, opacity: 1}}
                             transition={{ duration: 1, delay: 1}}
                             whileTap={{ scale: 0.8 }}
-                            className="font-programming py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#1BBBFF] text-[#0a192f] hover:bg-[#0a192f] hover:text-[#64ffda] border border-[#64ffda]"
+                            className="font-programming py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#1BBBFF] text-[#0a192f] hover:bg-[#0a192f] hover:text-[#64ffda] border border-[#64ffda] rounded"
                             onClick={() => window.open('https://drive.google.com/file/d/12r9fyZrtpljdVfE3NIScBBgJjAW7cLEy/view?usp=sharing', '_blank')}
                         >
                             Resume
@@ -111,7 +111,7 @@ const Home = () => {
                             animate={{ x: 0, opacity: 1}}
                             transition={{ duration: 1, delay: 1}}
                             whileTap={{ scale: 0.8 }}
-                            className="font-programming py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#FF914D] text-[#0a192f] hover:bg-[#0a192f] hover:text-[#FF914D] border border-[#FF914D]"
+                            className="font-programming py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#FF914D] text-[#0a192f] hover:bg-[#0a192f] hover:text-[#FF914D] border border-[#FF914D] rounded"
                             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                         >
                             Connect with me
