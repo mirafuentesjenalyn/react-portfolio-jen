@@ -12,10 +12,9 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="relative mb-20 flex flex-col items-center justify-between">
-
+    <nav className="fixed top-0 left-0 w-full z-50 p-5 bg-[#0a192f] border-b-8 border-[#39275c]">
       {/* mobile view */}
-      <div className='mt-10 md:hidden flex items-center justify-between w-full'>
+      <div className='md:hidden flex items-center justify-between w-full'>
         <button 
           onClick={toggleMenu} 
           className='text-2xl text-neutral-300 hover:text-cyan-300'>
@@ -30,7 +29,7 @@ const Navbar = () => {
       </div>
 
       {/* website view */}
-      <div className='mt-8 hidden md:flex items-center justify-between w-full'>
+      <div className='hidden md:flex items-center justify-between w-full mx-auto max-w-screen-2xl'>
         <a href='#home'>
           <div className='flex items-center'>
             <img className='w-10' src={logo} alt='Logo' />

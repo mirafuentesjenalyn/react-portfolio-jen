@@ -15,6 +15,9 @@ export default {
         'wayt': '#A1AFCB',
         'darkblue': '#0A192F',
       },
+      boxShadow: {
+        'shadblue': '0 4px 30px rgba(64, 138, 255, 0.2)', 
+      },
       backgroundImage: {
         'blue-yellow-gradient': 'linear-gradient(to right, #1E3A8A, #F59E0B)', // Example gradient
       }
