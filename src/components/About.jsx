@@ -12,7 +12,7 @@ const About = () => {
             className="flex items-center justify-center">
 
             <div className="font-programming flex flex-col items-center justify-center text-center px-4 sm:px-8 lg:px-16">
-                <h2 className='text-2xl sm:text-2xl lg:text-4xl text-[#FF914D] mb-2'>
+                <h2 className='text-4xl sm:text-4xl lg:text-5xl text-[#FF914D] mb-2'>
                     #about-me
                 </h2>
                 <hr className="border-t-2 border-[#8C52FF] w-1/2 mb-20 " />

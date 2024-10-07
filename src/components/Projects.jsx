@@ -12,7 +12,7 @@ const Projects = () => {
             initial={{ opacity: 0, y: -100 }}
             transition={{ duration: 0.5 }}
             className='font-programming flex flex-col items-center justify-center text-center'>
-            <h1 className="text-2xl sm:text-2xl lg:text-4xl text-[#a78bfa] mb-2">
+            <h1 className="text-4xl sm:text-4xl lg:text-5xl text-[#a78bfa] mb-2">
             #projects
             </h1>
             <hr className="border-t-2 border-[#7c3aed] w-1/2 mb-24" />
