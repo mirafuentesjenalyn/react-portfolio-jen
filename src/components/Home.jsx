@@ -52,8 +52,8 @@ const Home = () => {
                 animate={{ y: 0, opacity: 1}}
                 transition={{ duration: 1, delay: 0}}
                 src={profilePic}
-                width={300} 
-                height={300} 
+                width={200} 
+                height={200} 
                 alt='Jenalyn Mirafuentes' 
             />
 
