@@ -1,3 +1,4 @@
+import { motion, useScroll, useTransform } from 'framer-motion';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
@@ -9,6 +10,7 @@ import Footer from './components/Footer';
 
 
 const App = () => {
+  
   return (
     <div className="top-0 -z-10 h-full w-full overflow-x-hidden text-neutral-300 antialiased selection:bg-purple-300 selection:text-cyan-900">
       {/* <div className='fixed top-0 -z-10 h-full w-full'>

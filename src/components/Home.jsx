@@ -48,9 +48,13 @@ const Home = () => {
         <div className="font-programming flex flex-wrap justify-center">
             <motion.img 
                 className="block mx-auto rounded-full mb-5 md:hidden shadow-shadblue"
-                initial={{ y: -100, opacity: 0}}
-                animate={{ y: 0, opacity: 1}}
-                transition={{ duration: 1, delay: 0}}
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 0.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01],
+                }}
                 src={profilePic}
                 width={200} 
                 height={200} 
@@ -153,13 +157,18 @@ const Home = () => {
                 </div>
             </div>
             <motion.img
-                initial={{ x: 100, opacity: 0}}
-                animate={{ x: 0, opacity: 1}}
-                transition={{ duration: 1, delay: 0.5}}
-                src={profilePic}
-                alt='Jenalyn Mirafuentes' 
-                className="w-80 h-80 hidden rounded-full mt-12 mb-20 ml-40 float right lg:block max-w-xl shadow-shadblue"
-            /> 
+                src={profilePic} // Correct placement of the src attribute
+                alt="Jenalyn Mirafuentes" // Correct placement of the alt attribute
+                className="w-80 h-80 hidden rounded-full mt-12 mb-20 ml-40 float-right lg:block max-w-xl shadow-shadblue"
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{
+                    duration: 0.8,
+                    delay: 0.5,
+                    ease: [0, 0.71, 0.2, 1.01],
+                }}
+                />
+
         </div>
     </div>
   );

@@ -39,7 +39,7 @@ const Contact = () => {
     };
 
     return (
-        <div className=" font-programming border-b-8 border-t-8 border-[#8c52ff] max-w-3xl mx-auto px-4 sm:px-8 lg:px-16 pt-20 pb-24 w-full overflow-hidden">
+        <div className="bg-[#1e1b4b] font-programming border-b-8 border-t-8 border-[#8c52ff] max-w-3xl mx-auto px-4 sm:px-8 lg:px-16 pt-20 pb-24 w-full overflow-hidden">
         <motion.h1
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}
@@ -113,12 +113,15 @@ const Contact = () => {
                     </div>
 
                     {/* Send Message Button */}
-                    <button
-                    type="submit"
-                    className="bg-[#ad00ff] text-white py-2 px-6 rounded-3xl hover:bg-[#7c3aed] focus:outline-none"
-                    >
+                    <motion.button
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 10 }}                
+                        type="submit"
+                        className="bg-[#ad00ff] text-white py-2 px-6 rounded-3xl hover:bg-[#7c3aed] focus:outline-none"
+                        >
                     Send Message
-                    </button>
+                    </motion.button>
                 </form>
                 </motion.div>
 
