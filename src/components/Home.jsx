@@ -44,7 +44,7 @@ const container = (delay) => ({
 
 const Home = () => {
   return (
-    <div className="container mx-auto max-w-[90%] pt-48 w-full overflow-hidden">
+    <div className="container mx-auto max-w-[90%] pt-40 w-full overflow-hidden">
         <div className="font-programming flex flex-wrap justify-center">
             <motion.img 
                 className="block mx-auto rounded-full mb-5 md:hidden shadow-shadblue"

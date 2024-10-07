@@ -12,7 +12,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 p-5 bg-[#0a192f] border-b-8 border-[#39275c]">
+    <nav className="fixed top-0 left-0 w-full z-50 p-5 bg-[#041523] border-b-8 border-[#39275c]">
       {/* mobile view */}
       <div className='md:hidden flex items-center justify-between w-full'>
         <button 

@@ -1,7 +1,5 @@
-import project1 from "../assets/projects/project-1.jpg";
+import project1 from "../assets/projects/project-1.png";
 import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
 
 export const HOME_CONTENT = `//Passionate for continuous learning in coding and design.`;
 
@@ -41,14 +39,14 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Kapelicious: Coffee Shop Ordering System",
-    image: project1,
+    image: project2,
     description:
       "A Java application that allows customers to easily select and customize their coffee orders. Users can choose from a menu and place their orders. The system also includes features for viewing past orders and managing payments, making it a convenient tool for coffee shops and customers alike.",
     technologies: ["Java", "MySQL"],
   },
   {
     title: "CUENTA: A Real-Time Bus Passenger Counting",
-    image: project2,
+    image: project1,
     description:
       " Developed an innovative application, CUENTA, that employs Convolutional Neural Networks (CNN) for real-time passenger counting on buses. This system leverages advanced computer vision techniques to accurately track and differentiate between passengers entering and exiting the bus.",
     technologies: ["Python", "Firebase", "Flask", "OpenCV", "YOLOv8"],
