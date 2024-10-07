@@ -39,7 +39,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="font-programming border-b-8 border-t-8 border-[#8c52ff] max-w-3xl mx-auto px-4 sm:px-8 lg:px-16 pt-20 pb-24 w-full overflow-hidden">
+        <div className=" font-programming border-b-8 border-t-8 border-[#8c52ff] max-w-3xl mx-auto px-4 sm:px-8 lg:px-16 pt-20 pb-24 w-full overflow-hidden">
         <motion.h1
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: -100 }}

@@ -22,8 +22,8 @@ const App = () => {
         <div className='bg-[#1f1f1f] pb-24'><Technologies /></div>
         <div className='bg-[#121016] pb-24'><Experience /></div>
         <div id='projects' className='bg-[#050c13] pb-24'> <Projects /> </div>
-        <div id='contact' className='bg-[#39275c] '> <Contact /> </div>
-        <div id='footer' className='bg-[#041523] '> <Footer /> </div>
+        <div id='contact' className='bg-[#39275c]'> <Contact /> </div>
+        <div id='footer'> <Footer /> </div>
 
       </div>
 

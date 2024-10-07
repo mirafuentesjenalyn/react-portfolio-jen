@@ -132,7 +132,7 @@ const Home = () => {
                             whileTap={{ scale: 0.8, transition: { type: "spring", stiffness: 400, damping: 10 } }}
                             className="py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#0a192f] text-[#64ffda] hover:bg-[#1BBBFF] hover:text-[#0a192f] border border-[#64ffda] rounded"
                             // className="py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#1BBBFF] text-[#0a192f] hover:bg-[#0a192f] hover:text-[#64ffda] border border-[#64ffda] rounded"
-                            onClick={() => window.open('https://drive.google.com/file/d/12r9fyZrtpljdVfE3NIScBBgJjAW7cLEy/view?usp=sharing', '_blank')}
+                            onClick={() => window.open('https://drive.google.com/file/d/1_GTDDJlNbnA4v3QuJDrA0wkmTX2IViUu/view?usp=sharing', '_blank')}
                         >
                             Resume
                         </motion.button>

@@ -3,8 +3,8 @@ import { FaGithub, FaLinkedin, FaFacebook, FaGitlab } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-6">
-      <div className="font-programming container mt-4 mx-auto px-4 sm:px-8 lg:px-16 flex flex-col items-center">
+    <footer className="bg-[#020617] text-neutral-300 py-4">
+      <div className="font-programming container mt-4 max-w-3xl mx-auto text-center px-4 sm:px-8 lg:px-16 flex flex-col items-center">
 
         {/* Center Section - Company Name and Copyright */}
         <div className="text-center mb-4">
