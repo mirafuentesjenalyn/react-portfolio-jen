@@ -37,7 +37,7 @@ const Technologies = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: -100 }}
                 transition={{ duration: 1.5 }}
-                className="flex flex-wrap items-center justify-center mx-8 sm:mx-16 lg:mx-64 gap-4"
+                className="flex flex-wrap items-center justify-center mx-2 sm:mx-16 lg:mx-64 gap-4"
                 >
                 <motion.div 
                     variants={iconVariants(2.5)}

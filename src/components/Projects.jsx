@@ -15,7 +15,7 @@ const Projects = () => {
             <h1 className="text-4xl sm:text-4xl lg:text-5xl text-[#a78bfa] mb-2">
             #projects
             </h1>
-            <hr className="border-t-2 border-[#7c3aed] w-1/2 mb-24" />
+            <hr className="border-t-2 border-[#7c3aed] w-1/2 mb-16" />
         </motion.h1>
 
         

@@ -12,7 +12,7 @@ const Experience = () => {
             <h1 className="text-4xl sm:text-4xl lg:text-5xl text-[#ffc8c5] mb-2">
             #experience
             </h1>
-            <hr className="border-t-2 border-[#ef4444] w-1/2 mb-20" />
+            <hr className="border-t-2 border-[#ef4444] w-1/2 mb-16" />
         </motion.h1>
 
         <div>
@@ -31,9 +31,9 @@ const Experience = () => {
                         initial={{ opacity: 0, x: 100 }}
                         transition={{ duration: 1 }}
                         className="w-full max-w-xl lg:w-3/4">
-                        <h6 className="mb-2 text-base sm:text-lg lg:text-2xl font-semibold text-[#ef4444]">
+                        <h6 className="mb-2 text-2xl sm:text-2xl lg:text-2xl text-[#ef4444]">
                             {experience.role} - 
-                            <span className="text-xs sm:text-sm lg:text-base text-[#ffc8c5] opacity-70">
+                            <span className="text-xl sm:text-xl lg:text-xl text-[#ffc8c5] opacity-70">
                                 {experience.company}
                             </span>
                         </h6>

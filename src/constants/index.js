@@ -74,7 +74,9 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
+  agreement: "I agree that the data I put in here is processed so that my message can be answered. I understand that my data is NOT stored or used in any other way.",
   address: "Polangui, Albay",
-  phoneNo: "09219734756",
+  phoneNo: "+639219734756",
   email: "mirafuentesjenalyn@gmail.com",
 };
+
