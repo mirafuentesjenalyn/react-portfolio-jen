@@ -70,7 +70,7 @@ const Contact = () => {
                         name="name"
                         className="w-full bg-transparent text-[#8c52ff] border-b-2 border-[#d8b4fe] focus:outline-none focus:border-[#8c52ff] transition-colors duration-300 placeholder:text-[#a78bfa]"
                         placeholder="Name"
-                        autoComplete="nope"
+                        autoComplete="off"
                     />
                     </div>
                     
@@ -91,11 +91,11 @@ const Contact = () => {
                         ref={textareaRef}
                         onInput={handleInput}
                         name="message"
-                        className="w-full bg-transparent text-[#8c52ff] border-b-2 border-[#d8b4fe] focus:outline-none focus:border-[#8c52ff] transition-colors duration-300 placeholder:text-[#a78bfa]"
+                        className="-mt-3 w-full bg-transparent text-[#8c52ff] border-b-2 border-[#d8b4fe] focus:outline-none focus:border-[#8c52ff] transition-colors duration-300 placeholder:text-[#a78bfa] resize-none h-12" // Set a fixed height (adjust as necessary)
                         placeholder="Message"
                         rows={1}
-                        style={{ minHeight: '50px', padding: '0.5rem 0' }}
-                        autoComplete='nope'
+                        style={{ minHeight: '50px', padding: '0.8rem 0', height: 'auto' }}
+                        autoComplete='off'
                     />
                     </div>
 
@@ -139,7 +139,7 @@ const Contact = () => {
                 href={`https://mail.google.com/mail/?view=cm&fs=1&to=${CONTACT.email}`}
                 target="_blank" // Optional: Open in a new tab
                 rel="noopener noreferrer" // Security best practice
-                className="block text-sm text-[#8c52ff] flex items-center underline hover:text-[#7c3aed]"
+                className="block text-sm text-[#d8b4fe] flex items-center underline hover:text-[#7c3aed]"
             >
                 < MdEmail className="mr-2" /> {CONTACT.email}
             </a>
