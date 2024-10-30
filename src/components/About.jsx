@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'; 
 import aboutImg from '../assets/about.jpg';
 import { ABOUT_TEXT } from '../constants';
 import { motion } from 'framer-motion';
@@ -20,7 +21,8 @@ const About = () => {
                         {ABOUT_TEXT}
                     </p>
                     <p className='italic text-xs sm:text-base lg:text-xl text-[#8C52FF] mb-24'>
-                        Want to know more of me? <span className="text-[#FF914D] cursor-pointer">Click here</span>
+                        Want to know more of me?
+                        <Link to="/certificates" className="text-[#FF914D] cursor-pointer"> Click here</Link>
                     </p>
             </div>
         </motion.div>
