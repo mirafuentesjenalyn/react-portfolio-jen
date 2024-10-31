@@ -46,7 +46,7 @@ const Certificates = () => {
               }}
             />
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-90 text-white p-4"
+              className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-80 text-white p-4"
               initial="hidden"
               animate={visibleIndex === index ? "visible" : "hidden"}
               variants={fadeInAnimation}
