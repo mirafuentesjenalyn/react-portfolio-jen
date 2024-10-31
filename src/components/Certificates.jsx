@@ -1,19 +1,26 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import { motion } from 'framer-motion';
 import { CERTIFICATES } from '../constants';
 
 const Certificates = () => {
-  // Animation for images (zoom out on hover)
   const imageAnimation = {
     initial: { scale: 1, y: 0 },
     hover: { scale: 0.9, y: -10, transition: { type: "spring", stiffness: 300, damping: 10 } },
   };
 
-  // Fade-in animation for the title and description
   const fadeInAnimation = {
-    hidden: { opacity: 0, y: 20 }, // Start hidden and slightly down
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } }, // Fully visible and in place
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
   };
+
+  const [visibleIndex, setVisibleIndex] = useState(null);
+
+  const handleToggleClick = useCallback(
+    (index) => {
+      setVisibleIndex((current) => (current === index ? null : index));
+    },
+    []
+  );
 
   return (
     <section className="py-10 bg-[#0f1726] min-h-screen flex flex-col items-center text-neutral-300 w-full">
@@ -23,8 +30,9 @@ const Certificates = () => {
           <motion.div
             key={index}
             id={`cert-${index}`}
-            className="relative bg-[#1f1f1f] rounded-lg overflow-hidden shadow-lg cursor-pointer" // Add cursor-pointer class
-            whileHover={{ scale: 1.05 }} // Optional: Slightly scale up the entire card on hover
+            className="relative bg-[#1f1f1f] rounded-lg overflow-hidden shadow-lg cursor-pointer"
+            onClick={() => handleToggleClick(index)} // For mobile and desktop click
+            whileHover={{ scale: 1.05 }} // For desktop hover effect
           >
             <motion.img
               src={cert.image}
@@ -34,13 +42,13 @@ const Certificates = () => {
               whileHover="hover"
               variants={imageAnimation}
               onError={(e) => {
-                e.target.src = 'path/to/placeholder-image.png'; // Adjust the placeholder path as necessary
+                e.target.src = 'path/to/placeholder-image.png';
               }}
             />
             <motion.div
-              className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-95 text-white p-4"
+              className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-90 text-white p-4"
               initial="hidden"
-              whileHover="visible"
+              animate={visibleIndex === index ? "visible" : "hidden"}
               variants={fadeInAnimation}
             >
               <motion.h3
