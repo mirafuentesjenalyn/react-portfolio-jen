@@ -29,6 +29,7 @@ import cert11 from "../assets/certs/specialist.png";
 import cert12 from "../assets/certs/assembly.jpg";
 import cert13 from "../assets/certs/ml.png";
 import cert14 from "../assets/certs/agile.png";
+import cert15 from "../assets/certs/SIL.jpg";
 
 export const HOME_CONTENT = `//Passionate for continuous learning in coding and design.`;
 
@@ -78,6 +79,11 @@ export const PROJECTS = [
 ];
 
 export const CERTIFICATES = [
+  {
+    title: "Supervised Industry Learning",
+    image: cert15,
+    description: "SIL 15-day training was conducted from October 7 - October 30, 2024  in Infinitech Advertising Corporation.",
+  },
   {
     title: "Agile Practices for Efficient Software Development",
     image: cert14,

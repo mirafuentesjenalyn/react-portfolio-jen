@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'; 
-import aboutImg from '../assets/about.jpg';
 import { ABOUT_TEXT } from '../constants';
 import { motion } from 'framer-motion';
 

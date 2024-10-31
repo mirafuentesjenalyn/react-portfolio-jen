@@ -13,33 +13,20 @@ const container = (delay) => ({
     },
 });
 
-// const TypingEffect = ({ text, speed }) => {
-//     const [displayedText, setDisplayedText] = useState('');
+const textArray = [
+    { text: "Hello", className: "text-xs sm:text-xs lg:text-2xl text-[#408AFF] mb-5" },
+    { text: " there", className: "text-[#FFDE59]" },
+    { text: "()", className: "text-[#FFB283]" },
+    { text: " {", className: "text-[#FF914D]" },
+    { text: "I_am (", className: "text-xs sm:text-xs lg:text-2xl text-[#8C52FF] ml-8 mb-5" },
+    { text: "Jenalyn Mirafuentes", className: "mt-5 text-3xs sm:text-3xl lg:text-4xl text-[#1BBBFF] mb-2 sm:mb-5 lg:mb-3 ml-20" },
+    { text: {HOME_CONTENT}, className: "text-[#85A58E] text-xs sm:text-xs lg:text-xl my-5 sm:mb-3 ml-20 lg:mb-5" },
+    { text: ")", className: "text-xs sm:text-xs lg:text-xl text-[#8C52FF] ml-8 mb-5" },
+    { text: ";", className: "text-xs sm:text-xs lg:text-xl text-xl text-white" },
+    { text: "}", className: "text-xs sm:text-xs lg:text-xl text-[#FF914D] mb-5" },
+    { text: ";", className: "text-xs sm:text-xs lg:text-xl text-xl text-white" },
+];
 
-//     useEffect(() => {
-//         let index = 0;
-//         const intervalId = setInterval(() => {
-//             if (index < text.length) {
-//                 setDisplayedText((prev) => prev + text[index]);
-//                 index++;
-//             } else {
-//                 clearInterval(intervalId);
-//             }
-//         }, speed);
-
-//         return () => clearInterval(intervalId);
-//     }, [text, speed]);
-
-//     return (
-//         <motion.span
-//             initial={{ opacity: 0 }}
-//             animate={{ opacity: 1 }}
-//             transition={{ duration: 0.5 }}
-//         >
-//             {displayedText}
-//         </motion.span>
-//     );
-// }
 
 
 const Home = () => {
@@ -128,13 +115,13 @@ const Home = () => {
 
                     </div>
 
-                    <div className="font-programming mt-5 flex flex-wrap gap-4 mb-8">
+                    <div className="font-programming mt-5 flex flex-wrap justify-center gap-4 mb-8">
                         <motion.button
                             initial={{ x: -100, opacity: 0 }}
                             animate={{ x: 0, opacity: 1, transition: { type: "tween", duration: 1, delay: 1} }}
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 400, damping: 10, duration: 0.2 } }}
                             whileTap={{ scale: 0.8, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-                            className="py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#0a192f] text-[#64ffda] hover:bg-[#1BBBFF] hover:text-[#0a192f] border border-[#64ffda] rounded"
+                            className="py-3 px-8 text-sm sm:text-base font-bold w-3/4 sm:w-auto bg-[#0a192f] text-[#64ffda] hover:bg-[#1BBBFF] hover:text-[#0a192f] border border-[#64ffda] rounded-full" // Updated rounded class
                             // className="py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#1BBBFF] text-[#0a192f] hover:bg-[#0a192f] hover:text-[#64ffda] border border-[#64ffda] rounded"
                             onClick={() => window.open('https://drive.google.com/file/d/1_GTDDJlNbnA4v3QuJDrA0wkmTX2IViUu/view?usp=sharing', '_blank')}
                         >
@@ -146,7 +133,7 @@ const Home = () => {
                             animate={{ x: 0, opacity: 1,transition: { type: "tween", duration: 1, delay: 1} }}
                             whileHover={{ scale: 1.1, transition: { type: "spring", stiffness: 400, damping: 10} }}
                             whileTap={{ scale: 0.8, transition: { type: "spring", stiffness: 400, damping: 10 } }}
-                            className="font-programming py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#0a192f] text-[#FF914D] hover:bg-[#FF914D] hover:text-[#0a192f] border border-[#FF914D] rounded"
+                            className="font-programming py-3 px-8 text-sm sm:text-base font-bold w-3/4 sm:w-auto bg-[#0a192f] text-[#FF914D] hover:bg-[#FF914D] hover:text-[#0a192f] border border-[#FF914D] rounded-full" // Updated rounded class
                             // className="py-3 px-8 text-sm sm:text-base font-bold w-full sm:w-auto bg-[#FF914D] text-[#0a192f] hover:bg-[#0a192f] hover:text-[#FF914D] border border-[#FF914D] rounded"
                             onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
                         >
