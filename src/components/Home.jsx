@@ -58,7 +58,6 @@ const Home = () => {
                             className="text-xs sm:text-xs lg:text-2xl text-[#408AFF] mb-5"
                         >
                             Hello
-                            {/* <TypingEffect text='Hello' speed={100}/> */}
                             <span className="text-[#FFDE59]"> there</span>
                             <span className="text-[#FFB283]">()</span>
                             <span className="text-[#FF914D]"> &#123;</span>
@@ -79,7 +78,6 @@ const Home = () => {
                             animate='visible'
                             className="mt-5 text-3xs sm:text-3xl lg:text-4xl text-[#1BBBFF] mb-2 sm:mb-5 lg:mb-3 ml-20"
                         >
-                            {/* // className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"> */}
                             Jenalyn Mirafuentes
                         </motion.span>
 
